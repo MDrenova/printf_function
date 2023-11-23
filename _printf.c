@@ -37,14 +37,14 @@ int _printf(const char *format, ...)
 			}
 			if (formats[j].spec == NULL)
 			{
-				putchar('%');
-				putchar(format[i]);
+				_putchar('%');
+				_putchar(format[i]);
 				len += 2;
 			}
 		}
 		else
 		{
-			putchar(format[i]);
+			_putchar(format[i]);
 			len++;
 		}
 		i++;
