@@ -2,20 +2,18 @@
 #define MAIN_H
 
 #include <stdarg.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <stddef.h>
 
+/* Struct for format specifiers and corresponding print functions */
 typedef struct format
 {
     char *spec;
     int (*f)(va_list);
 } format_t;
 
-int _putchar(char c);
+/* Function prototypes */
 int _printf(const char *format, ...);
-int print_char(va_list char_list);
-int print_string(va_list string_list);
+int print_char(va_list list);
+int print_string(va_list list);
+int print_int(va_list list);
 
-#endif
+#endif /* MAIN_H */
