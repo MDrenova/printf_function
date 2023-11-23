@@ -17,10 +17,10 @@ The _printf function returns an integer, representing the total number of charac
 
  The format string provided to the function contains zero or more directives, each corresponding to a specific conversion specifier. The supported conversion specifiers in this project are:
 
-* %c: Character - Output a single character.
-* %s: String - Output a null-terminated string.
-* %%: Percent sign - Output a literal '%' character.
-* %d and %i: Integer - Outputs a signed decimal integer.
+* **%c:** *Character* - Output a single character.
+* **%s:** *String* - Output a null-terminated string.
+* **%%:** *Percent sign* - Output a literal '%' character.
+* **%d and %i:** *Integer* - Outputs a signed decimal integer.
 
 For each conversion specifier encountered in the format string, the _printf function processes the input arguments accordingly and writes the formatted result to stdout. 
 
@@ -67,6 +67,6 @@ is called, the function has no way to know that more arguments were passed, so i
 ## Authors
 
 - [@Mateo Drenova](https://www.github.com/MDrenova)
-- [@Atiljo Sulvari](https://www.github.com/a7il10/)
+- [@Atilio Sulvari](https://www.github.com/a7il10/)
 
 
