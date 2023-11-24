@@ -22,7 +22,13 @@ int _printf(const char *format, ...)
 
 	while (format && format[i])
 	{
-		if (format[i] == '%')
+		if (format[i] == '%' && format[i + 1] == '%')
+		{
+			_putchar('%');
+			len++;
+			i++;
+		}
+		else if (format[i] == '%' && format[i + 1] != '%')
 		{
 			i++;
 			j = 0;
